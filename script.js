@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded",function(){
 			cell.textContent=currentSymbol;
 
 			if(checkwin()){
-				messageDiv.textContent=`${currentPlayer} congratulation you won!`;
+				messageDiv.textContent=`${currentPlayer} congratulations you won!`;
 				gameActive=false;
 				return;
 			}
