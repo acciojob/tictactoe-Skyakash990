@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded",function(){
-	const player1Input=document.getElementById("player-1");
-	const player2Input=document.getElementById("player-2");
+	const player1Input=document.getElementById("player1");
+	const player2Input=document.getElementById("player2");
 	const submitButton=document.getElementById("submit");
 	const messageDiv=document.querySelector(".message");
 	const board=document.querySelector(".grid-container");
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded",function(){
 				return;
 			}
 			currentPlayer=currentPlayer===player1?player2:player1;
-			currentSymbol=currentSymbol==="X"?"O":"X";
+			currentSymbol=currentSymbol==="x"?"o":"x";
 			messageDiv.textContent=`${currentPlayer},you're up!`;
 		});
 	});
